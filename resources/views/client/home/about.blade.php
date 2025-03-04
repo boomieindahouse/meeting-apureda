@@ -25,14 +25,14 @@
 
 
         <!-- รูปภาพด้านขวา -->
-        <div class="relative w-[500px] ml-auto">
+        <div class="relative w-[500px] ml-auto mb-10">
             <!-- รูปใหญ่ -->
             <img src="{{ asset('images/homepage/about/img1.png') }}"
                 class="rounded-lg shadow-lg w-full max-w-md mx-auto origin-top-right scale-110">
 
             <!-- รูปเล็ก -->
             <img src="{{ asset('images/homepage/about/img2.png') }}"
-                class="absolute -bottom-8 -right-3 w-[250px] rounded-2xl shadow-lg border-white border-3 origin-top-right scale-110">
+                class="absolute -bottom-12 -right-3 w-[250px] rounded-2xl shadow-lg border-white border-3 origin-top-right scale-110">
         </div>
 
 
