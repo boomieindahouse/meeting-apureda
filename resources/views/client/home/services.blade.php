@@ -18,6 +18,22 @@
     </div>
 </section>
 
+<style>
+    /* เปลี่ยนสีของ bullet ทั้งหมด */
+.slick-dots li button:before {
+    color: #ff6600; /* เปลี่ยนเป็นสีที่ต้องการ */
+    font-size: 8px; /* ปรับขนาด */
+    opacity: 0.5; /* ความโปร่งใส */
+}
+
+/* เปลี่ยนสีของ bullet ที่ active */
+.slick-dots li.slick-active button:before {
+    color: #008C9E; /* เปลี่ยนสีของ bullet ที่เลือก */
+    opacity: 1;
+}
+
+</style>
+
 <!-- Import jQuery และ Slick -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
