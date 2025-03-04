@@ -61,7 +61,11 @@
 
         <!-- Copyright + Social Icons -->
         <div class="flex flex-col md:flex-row items-center justify-between text-sm text-gray-600">
-            <p>© 2024 Apureda Thailand by Meeting Creative. All rights reserved</p>
+            <p>© 2024 Apureda Thailand by
+                <a href="https://meeting.co.th/" class="hover:text-teal-600 duration-300" target="_blank">
+                Meeting Creative Co.,Ltd.&nbsp;
+                </a>All rights reserved
+            </p>
             <div class="flex space-x-4 mt-4 md:mt-0">
                 <a href="#" class="text-orange text-lg"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="text-orange text-lg"><i class="fab fa-line"></i></a>
@@ -69,7 +73,6 @@
                 <a href="#" class="text-orange text-lg"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
+
     </div>
 </footer>
-
-
