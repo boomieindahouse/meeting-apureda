@@ -9,7 +9,7 @@
                          alt="{{ $service->title }}" 
                          class="w-full h-60 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-normal">{{ $service->title }}</h3>
+                        <h3 class="text-lg text-[#303030] font-normal">{{ $service->title }}</h3>
                     </div>
                 </div>
             </div>
