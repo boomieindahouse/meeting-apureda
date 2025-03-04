@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;700&display=swap');
+@import 'tailwindcss';
+@source "../views";
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    body {
+        font-family: 'Noto Sans Thai', sans-serif;
+    }
+}
+
+@layer utilities {
+    .bg-primary {
+        background-color: #008C9E;
+    }
+    .text-primary {
+        color: #008C9E;
+    }
+    .hover\:text-primary:hover {
+        color: #008C9E;
+    }
+    .text-orange {
+        color: #F08015;
+    }
+}
+
+@layer components {
+    .section-title {
+        @apply text-3xl font-bold text-[#303030] text-center;
+    }
+}
+
