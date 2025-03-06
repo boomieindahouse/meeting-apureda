@@ -7,10 +7,10 @@
 
         <!-- เมนู -->
         <ul class="flex space-x-6 text-gray-600">
-            <li><a href="#" class="hover:text-primary">หน้าแรก</a></li>
+            <li><a href="/" class="hover:text-primary">หน้าแรก</a></li>
             <li><a href="#" class="hover:text-primary">ปั๊มลมและอุปกรณ์</a></li>
             <li><a href="#" class="hover:text-primary">ไส้กรองและอะไหล่</a></li>
-            <li><a href="#" class="hover:text-primary">ท่ออลูมิเนียม</a></li>
+            <li><a href="/cosbog" class="hover:text-primary">ท่ออลูมิเนียม</a></li>
             <li><a href="#" class="hover:text-primary">งานบริการ</a></li>
             <li><a href="#" class="hover:text-primary">เกี่ยวกับเรา</a></li>
             <li><a href="#" class="hover:text-primary">ข่าวสาร</a></li>

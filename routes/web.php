@@ -7,3 +7,7 @@ Route::get('/', function () {
     return view('client.home');
 });
 
+Route::get('/cosbog', function () {
+    return view('client.cosbog');
+});
+
