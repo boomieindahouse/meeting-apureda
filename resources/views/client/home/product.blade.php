@@ -32,7 +32,7 @@
         <img src="{{ asset('images/homepage/product/productbg1.png') }}" class="w-full h-[900px] object-cover opacity-20 group-hover:opacity-100 transition duration-500">
 
         <a href="#">
-            <img src="{{ asset('images/homepage/product/prod3.png') }}" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto h-auto object-cover">
+            <img src="{{ asset('images/homepage/product/prod3.png') }}" class="absolute top-[45%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 w-auto h-auto object-cover">
         </a>
 
         <div class="absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full p-10 text-white">

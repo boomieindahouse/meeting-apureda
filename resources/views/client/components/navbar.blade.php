@@ -34,26 +34,58 @@
     /* Active Nav */
     a.active {
         color: #008C9E !important;
-        /* ใช้สี active */
     }
-
-    /* Hover Nav */
-    a:hover {
-        color: #FC9732;
-        /* เปลี่ยนเป็นสีที่คุณต้องการ */
+    
+    /* Navbar transition */
+    nav {
+        transition: all 0.3s ease-in-out;
+    }
+    
+    nav.fixed {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(5px);
     }
 </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const menuLinks = document.querySelectorAll('nav ul li a');
-        const currentPath = window.location.pathname; // ดึง URL path ของหน้าเว็บ
-
-        menuLinks.forEach(link => {
-            // ตรวจสอบว่า URL path ของลิงก์ตรงกับหน้าเว็บปัจจุบันหรือไม่
-            if (link.getAttribute('href') === currentPath) {
-                link.classList.add('active'); // เพิ่มคลาส active ให้กับลิงก์ที่ตรงกัน
-            }
-        });
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    const currentPath = window.location.pathname;
+    const navbar = document.querySelector('nav');
+    const navbarClone = navbar.cloneNode(true);
+    
+    // Add classes and styling to the clone
+    navbarClone.classList.add('fixed-nav', 'w-full', 'fixed', 'top-0', 'left-0', 'right-0', 'z-50', 'shadow-lg', 'transform', '-translate-y-full');
+    document.body.appendChild(navbarClone);
+    
+    // Set active menu item in both navbars
+    menuLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
     });
+    
+    // Set active menu items in the clone
+    const cloneLinks = navbarClone.querySelectorAll('ul li a');
+    cloneLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 400) {
+            // Push down the fixed navbar
+            navbarClone.classList.remove('-translate-y-full');
+            navbarClone.classList.add('translate-y-0');
+        } else {
+            // Push up the fixed navbar
+            navbarClone.classList.remove('translate-y-0');
+            navbarClone.classList.add('-translate-y-full');
+        }
+    });
+});
 </script>
