@@ -29,3 +29,31 @@
         </div>
     </div>
 </nav>
+
+<style>
+    /* Active Nav */
+    a.active {
+        color: #008C9E !important;
+        /* ใช้สี active */
+    }
+
+    /* Hover Nav */
+    a:hover {
+        color: #FC9732;
+        /* เปลี่ยนเป็นสีที่คุณต้องการ */
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuLinks = document.querySelectorAll('nav ul li a');
+        const currentPath = window.location.pathname; // ดึง URL path ของหน้าเว็บ
+
+        menuLinks.forEach(link => {
+            // ตรวจสอบว่า URL path ของลิงก์ตรงกับหน้าเว็บปัจจุบันหรือไม่
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active'); // เพิ่มคลาส active ให้กับลิงก์ที่ตรงกัน
+            }
+        });
+    });
+</script>
