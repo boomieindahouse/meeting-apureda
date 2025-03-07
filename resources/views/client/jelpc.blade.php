@@ -7,4 +7,5 @@
     @include('client.jelpc.banner')
     @include('client.jelpc.slick_slider')
     @include('client.jelpc.services')
+    @include('client.components.plugin')
 @endsection
