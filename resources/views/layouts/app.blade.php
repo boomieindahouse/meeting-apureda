@@ -32,6 +32,7 @@
     </main>
 
     <!-- Footer ใช้ร่วมกันทุกหน้า -->
+    @include('client.components.plugin')
     @include('client.components.footer')
 
 </body>

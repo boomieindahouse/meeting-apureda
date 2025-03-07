@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="md:w-1/2 flex justify-end">
-            <img src="{{ asset('images/jelpc/jelpcservice/1.png') }}" alt="Service 1" class="w-full h-auto max-w-2xl rounded-lg">
+            <img src="{{ asset('images/jelpc/jelpcservice/1.png') }}" alt="Service 1" class="w-full h-auto max-w-2xl rounded-2xl">
         </div>
     </div>
 
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-start">
-                <img src="{{ asset('images/jelpc/jelpcservice/2.png') }}" alt="Service 2" class="w-full max-w-2xl rounded-lg">
+                <img src="{{ asset('images/jelpc/jelpcservice/2.png') }}" alt="Service 2" class="w-full max-w-2xl rounded-2xl">
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="md:w-1/2 flex justify-end">
-            <img src="{{ asset('images/jelpc/jelpcservice/3.png') }}" alt="Service 3" class="w-full max-w-2xl rounded-lg">
+            <img src="{{ asset('images/jelpc/jelpcservice/3.png') }}" alt="Service 3" class="w-full max-w-2xl rounded-2xl">
         </div>
     </div>
 </section>

@@ -12,7 +12,7 @@
             <li><a href="#" class="hover:text-primary">ไส้กรองและอะไหล่</a></li>
             <li><a href="/cosbog" class="hover:text-primary">ท่ออลูมิเนียม</a></li>
             <li><a href="/jelpc" class="hover:text-primary">งานบริการ</a></li>
-            <li><a href="#" class="hover:text-primary">เกี่ยวกับเรา</a></li>
+            <li><a href="/about_us" class="hover:text-primary">เกี่ยวกับเรา</a></li>
             <li><a href="#" class="hover:text-primary">ข่าวสาร</a></li>
         </ul>
 
