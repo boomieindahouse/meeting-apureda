@@ -10,4 +10,7 @@ Route::get('/', function () {
 // ใช้ Controller เพื่อส่ง $features ไปยัง View
 Route::get('/cosbog', [CosbogController::class, 'showAluminiumPipe']);
 
+Route::get('/jelpc', function () {
+    return view('client.jelpc');
+});
 

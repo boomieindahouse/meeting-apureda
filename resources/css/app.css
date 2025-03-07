@@ -43,6 +43,9 @@
     .section-title {
         @apply text-3xl font-bold text-[#303030] text-center;
     }
+    .jelpc-primary {
+        @apply text-[#C44848] font-semibold text-2xl;
+    }
 }
 
 

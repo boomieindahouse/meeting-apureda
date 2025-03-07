@@ -2,7 +2,7 @@
     <nav class="container mx-auto py-4">
         <ol class="list-none p-0 inline-flex text-gray-600 text-sm">
             <li class="flex items-center">
-                <a href="/" class="text-gray-500 hover:text-gray-700">หน้าแรก</a>
+                <a href="/" class="text-gray-500 hover:text-primary">หน้าแรก</a>
                 <span class="mx-2 text-xl font-normal">›</span>
             </li>
             <li class="flex items-center">

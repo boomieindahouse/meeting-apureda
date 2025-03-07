@@ -1,16 +1,15 @@
 @php
     $images = [
-        'images/cosbog/ins/1.png',
-        'images/cosbog/ins/2.png',
-        'images/cosbog/ins/3.png',
-        'images/cosbog/ins/4.png',
-        'images/cosbog/ins/5.png',
-        'images/cosbog/ins/6.png',
-        'images/cosbog/ins/7.png',
+        'images/jelpc/jelpcservice/1.png',
+        'images/jelpc/jelpcservice/2.png',
+        'images/jelpc/jelpcservice/3.png',
+        'images/jelpc/jelpcservice/4.png',
+        'images/jelpc/jelpcservice/5.png',
+        'images/jelpc/jelpcservice/6.png',
     ];
 @endphp
 
-<div class="relative w-full overflow-hidden">
+<div class="relative w-full overflow-hidden pb-6">
     <!-- แถวบน (เลื่อนซ้ายไปขวา) -->
     <div class="slick-slider">
         @foreach ($images as $image)

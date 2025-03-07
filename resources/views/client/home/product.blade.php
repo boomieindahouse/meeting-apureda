@@ -45,7 +45,7 @@
 
 <!-- ปุ่มอ่านเพิ่มเติม -->
 <div class="w-full flex justify-center my-6">
-    <button class="bg-primary rounded-3xl px-6 py-2 text-white hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
+    <button class="bg-primary rounded-3xl px-6 py-2 text-white border hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
         <a href="#">ทั้งหมด</a>
     </button>
 </div>

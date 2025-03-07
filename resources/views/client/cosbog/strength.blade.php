@@ -15,7 +15,7 @@
         <div class="flex flex-col md:flex-row items-center gap-8">
             <!-- Image side -->
             <div class="w-full md:w-1/2">
-                <img src="{{ asset('images/cosbog/strength/img1.png') }}" alt="CogBog ท่อลมอลูมิเนียม" class="rounded-lg shadow-md w-[full]">
+                <img src="{{ asset('images/cosbog/strength/img1.png') }}" alt="CogBog ท่อลมอลูมิเนียม" class="rounded-3xl shadow-md w-[full]">
             </div>
 
             <!-- Content side -->

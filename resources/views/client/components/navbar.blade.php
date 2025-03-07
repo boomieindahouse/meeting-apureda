@@ -1,17 +1,17 @@
 <nav class="bg-white shadow-md py-3">
-    <div class="container mx-auto px-6 flex justify-between items-center">
+    <div class="container mx-auto flex justify-between items-center">
         <!-- โลโก้ -->
         <div class="flex items-center">
             <img src="{{ asset('images/navbar/logo.png') }}" alt="Logo" class="h-10">
         </div>
 
         <!-- เมนู -->
-        <ul class="flex space-x-6 text-gray-600">
+        <ul class="flex space-x-10 text-gray-600">
             <li><a href="/" class="hover:text-primary">หน้าแรก</a></li>
             <li><a href="#" class="hover:text-primary">ปั๊มลมและอุปกรณ์</a></li>
             <li><a href="#" class="hover:text-primary">ไส้กรองและอะไหล่</a></li>
             <li><a href="/cosbog" class="hover:text-primary">ท่ออลูมิเนียม</a></li>
-            <li><a href="#" class="hover:text-primary">งานบริการ</a></li>
+            <li><a href="/jelpc" class="hover:text-primary">งานบริการ</a></li>
             <li><a href="#" class="hover:text-primary">เกี่ยวกับเรา</a></li>
             <li><a href="#" class="hover:text-primary">ข่าวสาร</a></li>
         </ul>
