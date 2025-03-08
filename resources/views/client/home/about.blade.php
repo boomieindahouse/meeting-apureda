@@ -25,7 +25,7 @@
 
 
         <!-- รูปภาพด้านขวา -->
-        <div class="relative w-[500px] ml-auto mb-10">
+        <div class="relative lg:w-[500px] ml-[60px] mb-10">
             <!-- รูปใหญ่ -->
             <img src="{{ asset('images/homepage/about/img1.png') }}"
                 class="rounded-lg shadow-lg w-full max-w-md mx-auto origin-top-right scale-110">
