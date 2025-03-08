@@ -12,7 +12,18 @@
             <li><a href="#" class="hover:text-primary">ไส้กรองและอะไหล่</a></li>
             <li><a href="/cosbog" class="hover:text-primary">ท่ออลูมิเนียม</a></li>
             <li><a href="/jelpc" class="hover:text-primary">งานบริการ</a></li>
-            <li><a href="/about_us" class="hover:text-primary">เกี่ยวกับเรา</a></li>
+
+            <!-- Dropdown เกี่ยวกับเรา -->
+            <li x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative z-50">
+                <a href="/about_us" class="hover:text-primary" id="about-link">เกี่ยวกับเรา</a>
+
+                <!-- Dropdown Menu -->
+                <div x-show="open" x-transition 
+                    class="absolute top-full left-2/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg rounded-lg w-40 py-2 dropdown-menu">
+                    <a href="/contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">ติดต่อเรา</a>
+                </div>
+            </li>
+
             <li><a href="#" class="hover:text-primary">ข่าวสาร</a></li>
         </ul>
 
