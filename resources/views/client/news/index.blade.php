@@ -15,7 +15,7 @@ $breadcrumbs = [
 
 <section class="bg-white py-12">
     <div class="container mx-auto">
-        <!-- Grid แสดงข่าว -->
+        <!-- Grid news layout -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($news as $item)
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
@@ -35,13 +35,13 @@ $breadcrumbs = [
                         </h3>
                     </a>
 
-                    <!-- แสดงรายละเอียดแบบย่อ -->
-                    <p class="text-gray-600 font-light text-sm mt-2">
+                    <!-- tiny desc -->
+                    <p class="text-gray-600 font-light text-lg mt-2 pt-6">
                         {{ Str::limit($item['detail'], 100, '...') }}
                     </p>
 
                     <a href="{{ route('news.show', ['slug' => $item['slug']]) }}"
-                        class="text-primary font-normal mt-3 inline-block hover:underline">
+                        class="text-primary font-normal mt-3 inline-block hover:underline pt-6">
                         อ่านเพิ่มเติม →
                     </a>
                 </div>

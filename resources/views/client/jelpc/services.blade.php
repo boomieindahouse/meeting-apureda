@@ -1,7 +1,7 @@
 <section class="bg-white py-12 space-y-10">
     <!-- Section 1 -->
     <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 space-y-6">
+        <div class="md:w-1/2 space-y-6 px-10">
             <!-- บริการที่ 1 -->
             <div>
                 <h2 class="jelpc-primary">บริการตรวจเช็คและบำรุงรักษาเครื่องปั๊มลม</h2>
@@ -32,7 +32,7 @@
     <!-- Section 2 -->
     <div class="bg-[#F5F5F5] py-10 shadow-xl">
         <div class="container mx-auto flex flex-col md:flex-row-reverse items-center">
-            <div class="md:w-1/2 space-y-6">
+            <div class="md:w-1/2 space-y-6 px-10">
                 <!-- บริการที่ 3 -->
                 <div>
                     <h2 class="jelpc-primary">บริการตรวจวัดประสิทธิภาพของเครื่องปั๊มลม</h2>
@@ -61,7 +61,7 @@
 
     <!-- Section 3 -->
     <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 space-y-6">
+        <div class="md:w-1/2 space-y-6 px-10">
             <!-- บริการที่ 5 -->
             <div>
                 <h2 class="jelpc-primary">บริการทดสอบประสิทธิภาพถังลม</h2>

@@ -15,13 +15,13 @@
             <div>
                 <h3 class="text-orange font-semibold mb-3">LEARN MORE</h3>
                 <ul class="text-sm text-gray-700 space-y-2">
-                    <li><a href="#" class="hover:text-orange duration-300">หน้าแรก</a></li>
+                    <li><a href="/" class="hover:text-orange duration-300">หน้าแรก</a></li>
                     <li><a href="#" class="hover:text-orange duration-300">ปั๊มลมและอุปกรณ์</a></li>
                     <li><a href="#" class="hover:text-orange duration-300">ไส้กรองและอะไหล่</a></li>
-                    <li><a href="#" class="hover:text-orange duration-300">ท่ออลูมิเนียม</a></li>
-                    <li><a href="#" class="hover:text-orange duration-300">งานบริการ</a></li>
-                    <li><a href="#" class="hover:text-orange duration-300">เกี่ยวกับเรา</a></li>
-                    <li><a href="#" class="hover:text-orange duration-300">ข่าวสาร</a></li>
+                    <li><a href="/cosbog" class="hover:text-orange duration-300">ท่ออลูมิเนียม</a></li>
+                    <li><a href="/jelpc" class="hover:text-orange duration-300">งานบริการ</a></li>
+                    <li><a href="/about_us" class="hover:text-orange duration-300">เกี่ยวกับเรา</a></li>
+                    <li><a href="/news" class="hover:text-orange duration-300">ข่าวสาร</a></li>
                 </ul>
             </div>
 
