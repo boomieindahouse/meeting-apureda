@@ -20,6 +20,8 @@
             <div class="bg-white p-16 rounded-lg shadow-sm">
                 <h3 class="text-2xl font-bold text-orange">จุดเด่นด้านบริการ</h3>
                 <p class="text-gray-600 font-light mt-2">
+xt-sm md:text-base">
+xt-sm md:text-base">
                     มีสต็อกสินค้าพร้อมส่ง <br> ด้วยความรวดเร็ว อุ่นใจ ทันใจผู้ใช้งาน
                 </p>
             </div>

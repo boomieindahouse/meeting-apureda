@@ -1,9 +1,9 @@
 <section class="py-10 text-center">
     <h2 class="section-title mb-6">Our Services</h2>
-    <div class="container mx-auto"> 
-        <div class="service-slider w-full"> 
+    <div class="container mx-auto">
+        <div class="service-slider w-full"> <!-- เอา flex ออก -->
             @foreach ($services as $service)
-            <div class="px-2">
+            <div class="px-4 py-2">
                 <div class="bg-white shadow-sm rounded-lg overflow-hidden">
                     <img src="{{ asset('images/homepage/ourservice/' . $service->image) }}" 
                          alt="{{ $service->title }}" 
@@ -19,32 +19,19 @@
 </section>
 
 <style>
-    /* ป้องกัน Overflow จาก Slick */
-    .container {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
+    /* เปลี่ยนสีของ bullet ทั้งหมด */
+.slick-dots li button:before {
+    color: #303030; /* เปลี่ยนเป็นสีที่ต้องการ */
+    font-size: 8px; /* ปรับขนาด */
+    opacity: 0.5; /* ความโปร่งใส */
+}
 
-    .service-slider {
-        box-sizing: border-box;
-    }
+/* เปลี่ยนสีของ bullet ที่ active */
+.slick-dots li.slick-active button:before {
+    color: #008C9E; /* เปลี่ยนสีของ bullet ที่เลือก */
+    opacity: 1;
+}
 
-    /* ป้องกันล้นในมือถือ */
-    .slick-track {
-        display: flex;
-    }
-
-    /* ปรับขนาด bullet ของ Slick */
-    .slick-dots li button:before {
-        color: #303030;
-        font-size: 8px;
-        opacity: 0.5;
-    }
-
-    .slick-dots li.slick-active button:before {
-        color: #008C9E;
-        opacity: 1;
-    }
 </style>
 
 <!-- Import jQuery และ Slick -->
@@ -62,15 +49,14 @@
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
-            responsive: [
-                {
+            responsive: [{
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 2
                     }
                 },
                 {
-                    breakpoint: 768,
+                    breakpoint: 640,
                     settings: {
                         slidesToShow: 1
                     }
