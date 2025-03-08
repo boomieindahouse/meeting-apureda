@@ -1,9 +1,21 @@
 <section class="about-section bg-cover bg-center py-20"
     style="background-image: url('images/homepage/about/layerbg.png');">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- เนื้อหาด้านซ้าย -->
-        <div class="flex flex-col items-start">
-            <p class="text-gray-700 mt-4 leading-relaxed text-start font-light">
+        
+        <!-- รูปภาพ (อยู่ด้านบนใน Mobile, อยู่ด้านขวาใน Desktop) -->
+        <div class="relative w-full flex justify-center md:order-2">
+            <!-- รูปใหญ่ -->
+            <img src="{{ asset('images/homepage/about/img1.png') }}"
+                class="rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[500px] max-w-md mx-auto origin-top-right scale-100">
+
+            <!-- รูปเล็ก -->
+            <img src="{{ asset('images/homepage/about/img2.png') }}"
+                class="absolute -bottom-8 sm:-bottom-10 md:-bottom-12 -right-2 sm:right-20 md:right-5 w-[150px] sm:w-[180px] md:w-[200px] lg:w-[250px] rounded-2xl shadow-lg border-white border-3">
+        </div>
+
+        <!-- เนื้อหา (อยู่ด้านล่างใน Mobile, อยู่ด้านซ้ายใน Desktop) -->
+        <div class="flex flex-col items-start text-start md:text-start md:order-1">
+            <p class="text-gray-700 mt-4 leading-relaxed font-light">
                 การฝึกอบรมและพัฒนาบุคลากรเป็นสิ่งที่เราให้ความสำคัญ เพื่อส่งเสริมทักษะความรู้ และมาตรฐานการบริการลูกค้าแบบมืออาชีพ มีขอบข่ายหน้าที่ความรับผิดชอบ และประสานงานอย่างเป็นระบบและมีประสิทธิภาพ
             </p>
             <ul class="mt-4 space-y-6">
@@ -17,24 +29,10 @@
                 </li>
             </ul>
 
-            <button class="bg-primary rounded-3xl px-6 py-2 mt-6 mx-auto text-white hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
+            <button class="bg-primary rounded-3xl px-6 py-2 mt-6 mx-auto md:mx-0 text-white hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
                 <a href="#">อ่านเพิ่มเติม</a>
             </button>
         </div>
-
-
-
-        <!-- รูปภาพด้านขวา -->
-        <div class="relative lg:w-[500px] ml-[60px] mb-10">
-            <!-- รูปใหญ่ -->
-            <img src="{{ asset('images/homepage/about/img1.png') }}"
-                class="rounded-lg shadow-lg w-full max-w-md mx-auto origin-top-right scale-110">
-
-            <!-- รูปเล็ก -->
-            <img src="{{ asset('images/homepage/about/img2.png') }}"
-                class="absolute -bottom-12 -right-3 w-[250px] rounded-2xl shadow-lg border-white border-3 origin-top-right scale-110">
-        </div>
-
 
     </div>
 </section>

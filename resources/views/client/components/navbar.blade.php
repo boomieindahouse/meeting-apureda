@@ -6,14 +6,14 @@
         </div>
 
         <!-- Mobile Menu Button (Visible from sm to md) -->
-        <button @click="open = !open" class="sm:block md:block lg:hidden focus:outline-none ml-auto">
+        <button @click="open = !open" class="sm:block md:block lg:hidden focus:outline-none ml-auto pr-6">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
         </button>
 
         <!-- Menu Items (Hidden on sm to md) -->
-        <ul class="hidden lg:flex lg:space-x-8 xl:space-x-10 text-gray-600">
+        <ul class="hidden lg:flex lg:space-x-6 xl:space-x-10 text-gray-600">
             <li><a href="/" class="hover:text-primary">หน้าแรก</a></li>
             <li><a href="#" class="hover:text-primary">ปั๊มลมและอุปกรณ์</a></li>
             <li><a href="#" class="hover:text-primary">ไส้กรองและอะไหล่</a></li>
