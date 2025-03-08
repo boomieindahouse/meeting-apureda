@@ -62,4 +62,7 @@
         </a>
     </div>
 </section>
+
+@include('client.news.news_more', ['news' => $news])
+
 @endsection

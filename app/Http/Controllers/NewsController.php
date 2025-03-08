@@ -136,6 +136,6 @@ class NewsController extends Controller
             abort(404);
         }
 
-        return view('client.news.show', compact('newsItem'));
+        return view('client.news.show', compact('newsItem', 'news'));
     }
 }
