@@ -12,4 +12,7 @@
 
     @include('client.news.banner')
     @include('client.components.breadcrumb', ['items' => $breadcrumbs])
+    <!-- @include('client.news.index') -->
+    <!-- จุดสำคัญที่ใช้แสดงเนื้อหาข่าว -->
+    @yield('news-content')
 @endsection

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CosbogController;
+use App\Http\Controllers\NewsController;
 
 Route::get('/', function () {
     return view('client.home');
@@ -22,7 +23,20 @@ Route::get('/contact', function () {
     return view('client.contactus');
 });
 
-Route::get('/news', function () {
-    return view('client.news');
-});
+// Route::get('/news', function () {
+//     return view('client.news');
+// });
 
+
+// แสดงรายการข่าว
+// Route::get('/news', function () {
+//     return view('client.news');
+// })->name('news.index');
+
+// แสดงข่าวเดี่ยว
+// Route::get('/news/{slug}', function ($slug) {
+//     return view('client.news.show', compact('slug'));
+// })->name('news.show');
+
+Route::get('/news', [NewsController::class, 'index'])->name('news.index');
+Route::get('/news/{slug}', [NewsController::class, 'show'])->name('news.show');
