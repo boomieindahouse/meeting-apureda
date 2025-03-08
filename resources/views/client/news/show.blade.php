@@ -13,7 +13,7 @@
 @include('client.components.breadcrumb', ['items' => $breadcrumbs])
 <section class="container mx-auto py-12">
     <div class="bg-white">
-        <!-- หัวข้อข่าว -->
+        
         <h1 class="text-3xl font-bold text-gray-800">{{ $newsItem['title'] }}</h1>
 
         <!-- รูปภาพหลัก -->
@@ -42,7 +42,7 @@
             Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
         </p>
 
-        <!-- รูปภาพ + คำบรรยาย (layout สองคอลัมน์) -->
+        <!-- รูปภาพรอง + คำบรรยาย (layout สองคอลัมน์) -->
         <div class="mt-6 flex flex-col md:flex-row items-center gap-6">
             <img src="{{ asset($newsItem['image']) }}" class="md:w-1/2 w-full h-80 object-cover rounded-lg shadow-md">
             <p class="text-gray-700 md:w-1/2 leading-relaxed">

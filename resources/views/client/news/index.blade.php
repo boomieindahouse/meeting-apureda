@@ -4,10 +4,10 @@
 
 @section('content')
 @php
-        $breadcrumbs = [
-            ['label' => 'หน้าแรก', 'url' => route('home')],
-            ['label' => 'ข่าวสาร']
-        ];
+$breadcrumbs = [
+['label' => 'หน้าแรก', 'url' => route('home')],
+['label' => 'ข่าวสาร']
+];
 @endphp
 
 @include('client.news.banner')
@@ -19,14 +19,16 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach($news as $item)
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                
-                <!-- ใช้ <a> ครอบ <img> เพื่อให้รูปคลิกได้ -->
-                <a href="{{ route('news.show', ['slug' => $item['slug']]) }}">
-                    <img src="{{ asset($item['image']) }}" class="w-full h-56 object-cover hover:scale-110 transition duration-500">
-                </a>
+
+                <!-- news img -->
+                <div class="overflow-hidden">
+                    <a href="{{ route('news.show', ['slug' => $item['slug']]) }}">
+                        <img src="{{ asset($item['image']) }}"
+                            class="w-full h-56 object-cover transform hover:scale-110 transition duration-500">
+                    </a>
+                </div>
 
                 <div class="p-5">
-                    <!-- ใช้ <a> ครอบ h3 -->
                     <a href="{{ route('news.show', ['slug' => $item['slug']]) }}">
                         <h3 class="text-lg font-semibold text-gray-800 hover:text-primary duration-300">
                             {{ $item['title'] }}
@@ -38,7 +40,6 @@
                         {{ Str::limit($item['detail'], 100, '...') }}
                     </p>
 
-                    <!-- ปุ่มอ่านเพิ่มเติม -->
                     <a href="{{ route('news.show', ['slug' => $item['slug']]) }}"
                         class="text-primary font-normal mt-3 inline-block hover:underline">
                         อ่านเพิ่มเติม →
