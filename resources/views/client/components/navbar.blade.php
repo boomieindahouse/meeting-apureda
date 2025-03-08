@@ -24,7 +24,7 @@
                 </div>
             </li>
 
-            <li><a href="#" class="hover:text-primary">ข่าวสาร</a></li>
+            <li><a href="/news" class="hover:text-primary">ข่าวสาร</a></li>
         </ul>
 
         <!-- หมายเลขโทรศัพท์ + QR Code -->
