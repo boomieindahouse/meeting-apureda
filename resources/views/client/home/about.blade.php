@@ -6,16 +6,16 @@
         <div class="relative w-full flex justify-center md:order-2">
             <!-- รูปใหญ่ -->
             <img src="{{ asset('images/homepage/about/img1.png') }}"
-                class="rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] lg:w-[500px] max-w-md mx-auto origin-top-right scale-100">
+                class="rounded-lg shadow-lg w-[90%] sm:w-[80%] md:w-[70%] w-[300px] lg:w-[500px] max-w-md mx-auto origin-top-right scale-100">
 
             <!-- รูปเล็ก -->
             <img src="{{ asset('images/homepage/about/img2.png') }}"
-                class="absolute -bottom-8 sm:-bottom-10 md:-bottom-12 -right-2 sm:right-20 md:right-5 w-[150px] sm:w-[180px] md:w-[200px] lg:w-[250px] rounded-2xl shadow-lg border-white border-3">
+                class="absolute -bottom-8 sm:-bottom-10 md:-bottom-12 right-5 sm:right-20 md:right-5 w-[150px] sm:w-[180px] md:w-[200px] lg:w-[250px] rounded-2xl shadow-lg border-white border-3">
         </div>
 
         <!-- เนื้อหา (อยู่ด้านล่างใน Mobile, อยู่ด้านซ้ายใน Desktop) -->
-        <div class="flex flex-col items-start text-start md:text-start md:order-1">
-            <p class="text-gray-700 mt-4 leading-relaxed font-light">
+        <div class="flex flex-col items-start text-start md:text-start md:order-1 px-6 pt-6 lg:pt-0">
+            <p class="text-gray-700 mt-4 leading-relaxed font-light text-center lg:text-start">
                 การฝึกอบรมและพัฒนาบุคลากรเป็นสิ่งที่เราให้ความสำคัญ เพื่อส่งเสริมทักษะความรู้ และมาตรฐานการบริการลูกค้าแบบมืออาชีพ มีขอบข่ายหน้าที่ความรับผิดชอบ และประสานงานอย่างเป็นระบบและมีประสิทธิภาพ
             </p>
             <ul class="mt-4 space-y-6">

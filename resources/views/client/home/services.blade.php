@@ -1,9 +1,9 @@
-<section class="py-10 text-center">
+<section class="py-10 text-center overflow-hidden"> <!-- ป้องกัน overflow -->
     <h2 class="section-title mb-6">Our Services</h2>
-    <div class="container mx-auto">
-        <div class="service-slider w-full"> <!-- เอา flex ออก -->
+    <div class="container mx-auto"> <!-- จำกัดความกว้าง -->
+        <div class="service-slider w-full"> 
             @foreach ($services as $service)
-            <div class="px-4 py-2">
+            <div class="py-2"> <!-- เอา px-4 ออก -->
                 <div class="bg-white shadow-sm rounded-lg overflow-hidden">
                     <img src="{{ asset('images/homepage/ourservice/' . $service->image) }}" 
                          alt="{{ $service->title }}" 
@@ -19,19 +19,28 @@
 </section>
 
 <style>
+    /* ป้องกันส่วนเกิน */
+    .slick-list {
+        overflow: hidden !important;
+    }
+
+    /* ป้องกันขอบจอเกินขนาด */
+    .service-slider .slick-slide {
+        margin: 0 10px; /* ป้องกัน slide ชิดขอบจอ */
+    }
+
     /* เปลี่ยนสีของ bullet ทั้งหมด */
-.slick-dots li button:before {
-    color: #303030; /* เปลี่ยนเป็นสีที่ต้องการ */
-    font-size: 8px; /* ปรับขนาด */
-    opacity: 0.5; /* ความโปร่งใส */
-}
+    .slick-dots li button:before {
+        color: #303030;
+        font-size: 8px;
+        opacity: 0.5;
+    }
 
-/* เปลี่ยนสีของ bullet ที่ active */
-.slick-dots li.slick-active button:before {
-    color: #008C9E; /* เปลี่ยนสีของ bullet ที่เลือก */
-    opacity: 1;
-}
-
+    /* เปลี่ยนสีของ bullet ที่ active */
+    .slick-dots li.slick-active button:before {
+        color: #008C9E;
+        opacity: 1;
+    }
 </style>
 
 <!-- Import jQuery และ Slick -->
@@ -58,7 +67,9 @@
                 {
                     breakpoint: 640,
                     settings: {
-                        slidesToShow: 1
+                        slidesToShow: 1,
+                        centerMode: true,  /* ป้องกันการติดขอบ */
+                        centerPadding: "10px" /* ปรับให้ไม่ชิดขอบจอ */
                     }
                 }
             ]
