@@ -1,7 +1,7 @@
 <section class="about-section bg-cover bg-center py-20"
     style="background-image: url('images/homepage/about/layerbg.png');">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
+
         <!-- รูปภาพ (อยู่ด้านบนใน Mobile, อยู่ด้านขวาใน Desktop) -->
         <div class="relative w-full flex justify-center md:order-2">
             <!-- รูปใหญ่ -->
@@ -29,9 +29,12 @@
                 </li>
             </ul>
 
-            <button class="bg-primary rounded-3xl px-6 py-2 mt-6 mx-auto md:mx-0 text-white hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
-                <a href="#">อ่านเพิ่มเติม</a>
-            </button>
+            <!-- ปรับปุ่มให้อยู่ตรงกลาง -->
+            <div class="w-full flex justify-center mt-6">
+                <button class="bg-primary rounded-3xl px-6 py-2 text-white hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
+                    <a href="#">อ่านเพิ่มเติม</a>
+                </button>
+            </div>
         </div>
 
     </div>
