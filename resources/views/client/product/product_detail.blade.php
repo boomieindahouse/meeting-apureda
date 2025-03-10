@@ -28,7 +28,7 @@ $breadcrumbs = [
         <p class="text-gray-600 mt-4">{{ $product['description'] }}</p>
 
         <div class="mt-6">
-            <a href="#" class="bg-[#008C9E] text-white py-2 px-6 rounded-full hover:bg-green-700">
+            <a href="#" class="bg-primary rounded-3xl px-6 py-2 text-white border hover:bg-white hover:border hover:border-teal-600 hover:text-primary duration-300">
                 Specification
             </a>
         </div>

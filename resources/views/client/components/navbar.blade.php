@@ -1,5 +1,5 @@
 <nav class="bg-white shadow-md py-3 fixed top-0 left-0 w-full z-50 transition-all duration-300" x-data="{ open: false }">
-    <div class="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-12">
+    <div class="container mx-auto flex justify-between items-center px-4 md:px-8 lg:px-6">
         <!-- Logo -->
         <div class="flex items-center">
             <img src="{{ asset('images/navbar/logo.png') }}" alt="Logo" class="h-10">
