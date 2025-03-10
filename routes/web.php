@@ -32,7 +32,7 @@ Route::get('/products', function () {
 
 Route::get('/products/{category}', [ProductController::class, 'index'])->name('products.index');
 
-Route::get('/products/{slug}', [ProductDescController::class, 'show'])->name('product.detail');
+Route::get('/product/{slug}', [ProductDescController::class, 'show'])->name('product.detail');
 
 // Route::get('/news', function () {
 //     return view('client.news');

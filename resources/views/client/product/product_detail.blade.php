@@ -4,7 +4,7 @@
 @php
 $breadcrumbs = [
 ['label' => 'หน้าแรก', 'url' => route('home')],
-['label' => 'เครื่องอัดลม / ปั๊มลม (Air Compressor)', 'url' => route('airpump')],
+['label' => 'เครื่องอัดลม / ปั๊มลม (Air Compressor)', 'url' => route('products.index', ['category' => 'air-compressor'])],
 ['label' => $product['name']]
 ];
 @endphp
@@ -13,6 +13,7 @@ $breadcrumbs = [
 @include('client.components.breadcrumb', ['items' => $breadcrumbs])
 
 @section('content')
+
 <div class="container mx-auto py-10">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <!-- ภาพสินค้า -->
