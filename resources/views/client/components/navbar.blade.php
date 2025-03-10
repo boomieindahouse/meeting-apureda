@@ -22,7 +22,7 @@
         <!-- Desktop Menu Items -->
         <ul class="hidden lg:flex lg:space-x-6 xl:space-x-10 text-gray-600">
             <li><a href="/" class="nav-link hover:text-primary">หน้าแรก</a></li>
-            <li><a href="#" class="nav-link hover:text-primary">ปั๊มลมและอุปกรณ์</a></li>
+            <li><a href="/airpump" class="nav-link hover:text-primary">ปั๊มลมและอุปกรณ์</a></li>
             <li><a href="#" class="nav-link hover:text-primary">ไส้กรองและอะไหล่</a></li>
             <li><a href="/cosbog" class="nav-link hover:text-primary">ท่ออลูมิเนียม</a></li>
             <li><a href="/jelpc" class="nav-link hover:text-primary">งานบริการ</a></li>
