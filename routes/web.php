@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CosbogController;
 use App\Http\Controllers\NewsController;
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductDescController;
 use App\Http\Controllers\ProductController;
 
 
@@ -26,13 +26,13 @@ Route::get('/contact', function () {
     return view('client.contactus');
 });
 
-Route::get('/air-pump-and-equipment', function () {
-    return view('client.product_airpump');
+Route::get('/products', function () {
+    return redirect('/products/air-compressor'); // กำหนดค่าเริ่มต้นเป็น "air-compressor"
 });
 
-Route::get('/airpump', [CategoryController::class, 'showCategory'])->name('airpump');
+Route::get('/products/{category}', [ProductController::class, 'index'])->name('products.index');
 
-Route::get('/product/{slug}', [ProductController::class, 'show'])->name('product.detail');
+Route::get('/products/{slug}', [ProductDescController::class, 'show'])->name('product.detail');
 
 // Route::get('/news', function () {
 //     return view('client.news');

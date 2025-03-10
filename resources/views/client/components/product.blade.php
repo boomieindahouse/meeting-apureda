@@ -1,27 +1,27 @@
 <div class="w-full">
-    <h2 class="text-2xl font-semibold text-teal-700">เครื่องอัดลม / ปั๊มลม (Air Compressor)</h2>
+    <h2 class="text-2xl font-semibold text-teal-700">
+        {{ $categoryName ?? 'หมวดหมู่สินค้า' }}
+    </h2>
+
     <p class="font-light pt-4">
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna,
-        vel scelerisque nisl consectetur et.
+        {{ $categoryDescription }}
     </p>
 
     @if(isset($products) && count($products) > 0)
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         @foreach ($products as $product)
         @php
-            // แปลงชื่อสินค้าเป็น slug เช่น 'Fixed Speed Screw Compressor' -> 'fixed-speed-screw-compressor'
-            $slug = Str::slug($product->name);
+        $slug = Str::slug($product['name']);
         @endphp
         <a href="{{ route('product.detail', ['slug' => $slug]) }}" class="block">
             <div class="bg-[#F8F8FA] shadow-md rounded-lg overflow-hidden h-full flex flex-col transition">
                 <div class="flex-grow flex items-center justify-center py-10">
-                    <img src="{{ asset('images/products/aircompressor/' . $product->image) }}" 
-                         alt="{{ $product->name }}" 
-                         class="max-w-full max-h-48 object-contain p-4 hover:scale-110 transition duration-300">
+                    <img src="{{ asset('images/products/aircompressor/' . $product['image']) }}"
+                        alt="{{ $product['name'] }}"
+                        class="max-w-full max-h-48 object-contain p-4 hover:scale-110 transition duration-300">
                 </div>
                 <div class="p-2 bg-[#414042] text-white text-center text-base min-h-[70px] flex items-center justify-center">
-                    <span class="leading-tight hover:text-primary">{{ $product->name }}</span>
+                    <span class="leading-tight hover:text-primary">{{ $product['name'] }}</span>
                 </div>
             </div>
         </a>
