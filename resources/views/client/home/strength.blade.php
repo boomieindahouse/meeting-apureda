@@ -3,7 +3,7 @@
         <h2 class="section-title text-xl md:text-4xl font-bold">
             สินค้าดีมีคุณภาพ...ครบทุกความต้องการ
         </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1   gap-6 mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3   gap-6 mt-8">
             <!-- Card 1 -->
             <div class="bg-white p-8 sm:p-12 md:p-16 rounded-lg shadow-sm">
                 <h3 class="text-xl sm:text-2xl font-bold text-teal-600">จุดเด่นด้านธุรกิจ</h3>
